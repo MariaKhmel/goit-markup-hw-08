@@ -1,0 +1,138 @@
+.footer {
+  background-color: var(--background-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__icon {
+  fill: var(--icons-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.address__link {
+  margin-bottom: 9px;
+  color: var(--secondary-accent-color);
+
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+.mail__link {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+.mail__link,
+.phone__link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.follow {
+  align-items: baseline;
+  margin-left: 70px;
+}
+
+.follow__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-accent-color);
+
+  margin-bottom: 20px;
+}
+.networks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+
+  & li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
+}
+.footer__link:hover .footer__icon,
+.footer__link:focus .footer__icon {
+  fill: var(--secondary-accent-color);
+}
+
+.footer__link .footer__icon {
+  fill: var(--secondary-accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe {
+  margin-left: auto;
+}
+.footer__form {
+  display: flex;
+}
+
+.subscribe__label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: var(--secondary-accent-color);
+}
+
+.subscribe__input {
+  width: 358px;
+  padding: 15px 0px 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--background-color);
+  margin-right: 12px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--secondary-background-color);
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-text-color);
+  }
+  &::placeholder {
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+  margin-right: 8px;
+  fill: var(--secondary-accent-color);
+}
