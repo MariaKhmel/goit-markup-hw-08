@@ -1,3 +1,11 @@
+.section-examples {
+  display: flex;
+  padding-top: 2px;
+  padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .examples__card {
   position: relative;
 }
