@@ -44,10 +44,6 @@
     text-align: start;
   }
 }
-.features__item:not(:last-child),
-.examples__item:not(:last-child) {
-  margin-right: 30px;
-}
 
 .section__text {
   color: var(--secondary-text-color);

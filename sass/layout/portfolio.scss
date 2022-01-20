@@ -1,7 +1,6 @@
 .filter {
   display: flex;
-  margin-bottom: 56px;
-  justify-content: center;
+  margin-bottom: 40px;
 
   .filter__item:not(:last-child) {
     margin-right: 8px;
@@ -9,7 +8,7 @@
 }
 
 .products {
-  display: flex;
+  // display: flex;
   flex-wrap: wrap;
 }
 .products__item {
@@ -31,7 +30,7 @@
 
 .products__overlay {
   position: absolute;
-  width: 100%;
+  // width: 100%;
   height: 100%;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);

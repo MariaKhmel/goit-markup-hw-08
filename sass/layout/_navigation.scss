@@ -1,12 +1,12 @@
 .navigation {
-  display: flex;
+  // display: flex;
   align-items: center;
 }
 .navigation__site {
-  display: flex;
+  // display: flex;
 }
 .site-nav {
-  display: flex;
+  // display: flex;
 }
 .site-nav,
 .contact-nav {
@@ -16,7 +16,7 @@
 
 .site-nav__link {
   position: relative;
-  display: flex;
+  // display: flex;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -32,13 +32,13 @@
 }
 
 .contact-nav {
-  display: flex;
+  // display: flex;
   margin-left: auto;
   color: var(--secondary-text-color);
 }
 
 .contact-nav__link {
-  display: flex;
+  // display: flex;
   align-items: center;
 
   color: var(--secondary-text-color);
@@ -74,7 +74,7 @@
     position: absolute;
     top: 45px;
     bottom: auto;
-    width: 100%;
+    // width: 100%;
     height: 4px;
     background-color: var(--accent-text-color);
     border-radius: 4px;
