@@ -921,6 +921,12 @@ button {
   display: flex;
 }
 
+@media screen and (min-width: 1200px) {
+  .examples__card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .examples__label {
   position: absolute;
   bottom: 0px;
