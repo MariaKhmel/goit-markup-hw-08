@@ -13,7 +13,7 @@
   display: flex;
 }
 
-.examples__card:not(:last-child) {
+.examples__item:not(:last-child) {
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
   }
