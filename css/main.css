@@ -1064,16 +1064,14 @@ body.modal-open {
 }
 
 .site-nav {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 84px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .site-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin-right: 305px;
   }
 }
 

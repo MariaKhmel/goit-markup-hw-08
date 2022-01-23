@@ -30,10 +30,10 @@
   display: flex;
 }
 .site-nav {
-  display: block;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  margin-right: 84px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
   }
 }
 .site-nav__item {
