@@ -965,6 +965,7 @@ body.modal-open {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
+  padding: 16px 0;
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.03em;
@@ -980,6 +981,7 @@ body.modal-open {
   .navigation__logo {
     position: static;
     margin-right: 88px;
+    padding: 26px 0;
   }
 }
 @media screen and (min-width: 1200px) {
