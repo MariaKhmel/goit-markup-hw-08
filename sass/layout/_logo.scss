@@ -1,29 +1,29 @@
 .navigation__logo {
   color: var(--primary-text-color);
-  display: block;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  padding: 16px 0;
-  font-size: 24px;
-  line-height: calc(28 / 24);
-  letter-spacing: 0.03em;
-  @media screen and (max-width: 767px) {
-    position: absolute;
-    top: 16px;
-    left: 15px;
-  }
+  text-decoration: none;
 
-  @media screen and (min-width: 768px) {
-    position: static;
-    margin-right: 88px;
-    padding: 26px 0;
+  font-family: Raleway;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  margin-right: 93px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    color: var(--accent-text-color);
   }
-  @media screen and (min-width: 1200px) {
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    padding: 24px 0;
-    margin-right: 93px;
+  @media screen and (max-width: 767px) {
+    margin-right: 30px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+    margin-right: 88px;
   }
 }
 .logo {

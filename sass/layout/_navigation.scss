@@ -9,6 +9,13 @@
     justify-content: space-between;
   }
 }
+.headnav {
+  display: flex;
+  margin-right: 84px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
+}
 .navigation {
   @media screen and (min-width: 768px) {
     display: flex;
