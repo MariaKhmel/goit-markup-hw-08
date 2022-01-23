@@ -19,6 +19,7 @@
 <!-- Шапка сайта-->
 <header class="header">
     <div class="container">
+        <div class="navigation">
     <nav class="navigation__site">
     <a href="./index.html" class="navigation__logo"><span class="navigation__logo--accent">Web</span>studio</a>
    
@@ -31,8 +32,8 @@
     data-menu-button>
         
     <svg class="mobile__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-        <use class="mobile__burger" href="./images/icons.svg#icon-burger"></use>
-        <use class="mobile__close" href="./images/icons.svg#icon-close-mobile"></use>
+        <use class="mobile__burger" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+        <use class="mobile__close" href="./images/symbol-defs.svg#icon-close_40px"></use>
     </svg>
     </button>
     
@@ -78,6 +79,7 @@
     </div>
     </div>
     </div>
+    </div>
 </header>
 <!--Предложение компании-->
     <main>
@@ -90,7 +92,6 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <div class="modal-box">
                 <button class="button-close" data-modal-close>
     <svg class="button-close__icon">
         <use href="./images/symbol-defs.svg#icon-button-close"></use>
@@ -134,15 +135,16 @@
     <label for="check-policy" class="checkbox__label">
         Соглашаюсь с рассылкой и принимаю &nbsp <a href=""> Условия договора</a>
     </label>
+    </div>
     <button type="submit" class="modal__btn">
 Отправить
     </button>
+ 
 </form>
-     </div>
+   
     </div>
-</div>
-</div>
-    
+
+
 
         </section>
 
@@ -230,7 +232,15 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="team">
 <li class="team__item team__item--card">
-    <img src="./images/photo1.jpg" alt="Портрет Игоря Демьяненко " >
+    <picture>
+        <source media='(min-width: 1200px)'
+            srcset="./images/photo1desktop.jpg 1x, ./images/photo1desktop@2x.jpg 2x">
+        <source media='(min-width: 768px)'
+            srcset="./images/photo1tab.jpg 1x, ./images/photo1tab@2x.jpg 2x">
+        <source media='(min-width: 480px)'
+            srcset="./images/photo1mobile.jpg 1x, ./images/photo1mobile2x.jpg 2x">
+    <img src="./images/photo1desktop.jpg" alt="Портрет Игорь Демьяненко ">
+    </picture>
     <div class="team__description">
     <h3 class="team__title">Игорь Демьяненко</h3>
     <p class="section__text" >Product Designer</p>
@@ -267,7 +277,13 @@
     </div>
 </li>
 <li class="team__item team__item--card">
-    <img src="./images/photo2.jpg" alt="Портрет Ольги Репиной "  >
+    <picture>
+<source media='(min-width: 1200px)' srcset="./images/photo2desktop.jpg 1x, ./images/photo2desktop@2x.jpg 2x">
+<source media='(min-width: 768px)' srcset="./images/photo2tab.jpg 1x, ./images/photo2tab@2x.jpg 2x">
+<source media='(min-width: 480px)' srcset="./images/photo2mobile.jpg 1x, ./images/photo2mobile@2x.jpg 2x">
+ <img src="./images/photo2desktop.jpg" alt="Портрет Ольги Репиной ">
+    </picture>
+ 
     <div class="team__description">
     <h3 class="team__title">Ольга Репина</h3>
     <p class="section__text">Frontend Developer</p>
@@ -304,7 +320,14 @@
     </div>
 </li>
 <li class="team__item team__item--card">
-    <img src="./images/photo3.jpg" alt="Портрет Николая Тарасова " >
+
+    <picture>
+    <source media='(min-width: 1200px)' srcset="./images/photo3desktop.jpg 1x, ./images/photo3desktop@2x.jpg 2x">
+    <source media='(min-width: 768px)' srcset="./images/photo3tab.jpg 1x, ./images/photo3tab@2x.jpg 2x">
+     <source media='(min-width: 480px)' srcset="./images/photo3mobile.jpg 1x, ./images/photo3mobile@2x.jpg 2x">
+     <img src="./images/photo3desktop.jpg" alt="Портрет Николая Тарасова ">
+    </picture>
+
     <div class="team__description">
     <h3 class="team__title">Николай Тарасов</h3>
     <p class="section__text">Marketing</p>
@@ -341,7 +364,13 @@
     </div>
 </li>
 <li class="team__item team__item--card">
-    <img src="./images/photo4.jpg" alt="Портрет Михаила Ермакова " >
+    <picture>
+        <source media='(min-width: 1200px)' srcset="./images/photo4desktop.jpg 1x, ./images/photo4desktop@2x.jpg 2x">
+        <source media='(min-width: 768px)' srcset="./images/photo4tab.jpg 1x, ./images/photo4tab@2x.jpg 2x">
+        <source media='(min-width: 480px)' srcset="./images/photo4mobile.jpg 1x, ./images/photo4mobile@2x.jpg 2x">
+        <img src="./images/photo4.jpg" alt="Портрет Михаила Ермакова ">
+    </picture>
+
     <div class="team__description">
     <h3 class="team__title">Михаил Ермаков</h3>
     <p class="section__text">UI Designer</p>

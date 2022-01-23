@@ -95,6 +95,7 @@
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row-reverse;
+    margin-left: auto;
   }
 }
 .header-contacts__item {
@@ -129,6 +130,9 @@
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 }
 .header-contacts__tel,
 .header-contacts__mail {
